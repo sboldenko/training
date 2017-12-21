@@ -5,7 +5,7 @@ Program=Micro-Cap
 Screen=1366,768
 MCAPVersion=9.0.6.1
 Key ID=2 233 293 684
-NLCnt=70
+NLCnt=100
 TXCnt=0
 
 [shapedef]
@@ -217,7 +217,7 @@ Show Grid Text=True
 
 [Comp]
 Name=Capacitor
-Grid=107,37
+Grid=110,32
 Rot=2
 
 [Attr]
@@ -230,7 +230,7 @@ Style=8192
 
 [Comp]
 Name=2N3904
-Grid=114,37
+Grid=117,32
 
 [Attr]
 ONV=29,-11,PART,Q1
@@ -244,7 +244,7 @@ ONV=29,25,PACKAGE,TO-92
 
 [Comp]
 Name=Resistor
-Grid=111,42
+Grid=114,37
 Rot=1
 
 [Attr]
@@ -257,7 +257,7 @@ Style=8192
 
 [Comp]
 Name=Resistor
-Grid=111,26
+Grid=114,21
 Rot=1
 
 [Attr]
@@ -269,25 +269,25 @@ ONV=-25,12,RESISTANCE,12k
 Style=8192
 
 [Wire]
-Grids=107,37,111,37
+Grids=110,32,114,32
 
 [Wire]
-Grids=111,32,111,37
+Grids=114,27,114,32
 
 [Wire]
-Grids=111,37,114,37
+Grids=114,32,117,32
 
 [Wire]
-Grids=111,37,111,42
+Grids=114,32,114,37
 
 [Comp]
 Name=Ground
-Grid=111,48
+Grid=114,43
 Rot=7
 
 [Comp]
 Name=Resistor
-Grid=117,32
+Grid=120,27
 Rot=3
 
 [Attr]
@@ -300,7 +300,7 @@ Style=8192
 
 [Comp]
 Name=Resistor
-Grid=117,40
+Grid=120,35
 Rot=1
 
 [Attr]
@@ -313,7 +313,7 @@ Style=8192
 
 [Comp]
 Name=Resistor
-Grid=117,48
+Grid=120,43
 Rot=1
 
 [Attr]
@@ -325,11 +325,11 @@ ONV=-22,13,RESISTANCE,300
 Style=8192
 
 [Wire]
-Grids=117,46,117,48
+Grids=120,41,120,43
 
 [Comp]
 Name=Capacitor
-Grid=123,54
+Grid=126,49
 Rot=3
 
 [Attr]
@@ -341,21 +341,21 @@ ONV=-31,-36,CAPACITANCE,100u
 Style=8192
 
 [Wire]
-Grids=117,48,123,48
+Grids=120,43,126,43
 
 [Comp]
 Name=Ground
-Grid=117,54
+Grid=120,49
 Rot=7
 
 [Comp]
 Name=Ground
-Grid=123,54
+Grid=126,49
 Rot=7
 
 [Comp]
 Name=Battery
-Grid=102,23
+Grid=105,18
 Rot=3
 
 [Attr]
@@ -366,28 +366,28 @@ Style=8192
 ONV=-22,-37,VALUE,12
 
 [Wire]
-Grids=117,32,117,33
+Grids=120,27,120,28
 
 [Wire]
-Grids=111,26,114,26
+Grids=114,21,117,21
 
 [Wire]
-Grids=102,17,114,17
+Grids=105,12,117,12
 
 [Wire]
-Grids=114,17,114,26
+Grids=117,12,117,21
 
 [Wire]
-Grids=114,26,117,26
+Grids=117,21,120,21
 
 [Comp]
 Name=Ground
-Grid=102,23
+Grid=105,18
 Rot=7
 
 [Comp]
 Name=Resistor
-Grid=130,33
+Grid=133,28
 Rot=1
 
 [Attr]
@@ -398,20 +398,14 @@ Style=8192
 ONV=10,15,RESISTANCE,100k
 Style=8192
 
-[Wire]
-Grids=117,33,130,33
-
-[Wire]
-Grids=117,33,117,34
-
 [Comp]
 Name=Ground
-Grid=130,39
+Grid=133,34
 Rot=7
 
 [Comp]
 Name=Sine Source
-Grid=101,43
+Grid=104,38
 Rot=3
 
 [Attr]
@@ -423,7 +417,7 @@ ONV=-42,-36,MODEL,60HZ
 
 [Comp]
 Name=Ground
-Grid=101,43
+Grid=104,38
 Rot=7
 
 [Comp]
@@ -690,6 +684,221 @@ Style=8192
 [Wire]
 Grids=12,55,15,55
 
+[Comp]
+Name=2N3904
+Grid=72,32
+
+[Attr]
+ONV=29,-11,PART,Q4
+Style=8192
+
+[Attr]
+ONV=29,1,MODEL,2N3904
+
+[Attr]
+ONV=29,25,PACKAGE,TO-92
+
+[Comp]
+Name=Resistor
+Grid=75,27
+Rot=3
+
+[Attr]
+ONV=-25,-25,PART,R16
+Style=8192
+
+[Attr]
+ONV=-25,-37,RESISTANCE,540
+Style=8192
+
+[Comp]
+Name=Ground
+Grid=75,41
+Rot=7
+
+[Comp]
+Name=Battery
+Grid=60,18
+Rot=3
+
+[Attr]
+ONV=-24,-25,PART,V7
+Style=8192
+
+[Attr]
+ONV=-22,-37,VALUE,12
+
+[Wire]
+Grids=75,27,75,28
+
+[Wire]
+Grids=60,12,68,12
+
+[Wire]
+Grids=75,12,75,21
+
+[Comp]
+Name=Ground
+Grid=60,18
+Rot=7
+
+[Comp]
+Name=Resistor
+Grid=88,28
+Rot=1
+
+[Attr]
+ONV=12,27,PART,R17
+Style=8192
+
+[Attr]
+ONV=10,16,RESISTANCE,10k
+Style=8192
+
+[Comp]
+Name=Ground
+Grid=88,34
+Rot=7
+
+[Comp]
+Name=Sine Source
+Grid=59,38
+Rot=3
+
+[Attr]
+ONV=-29,-24,PART,V8
+Style=8192
+
+[Attr]
+ONV=-42,-36,MODEL,60HZ
+
+[Comp]
+Name=Ground
+Grid=59,38
+Rot=7
+
+[Wire]
+Grids=75,21,75,22
+
+[Comp]
+Name=Resistor
+Grid=68,27
+Rot=3
+
+[Attr]
+ONV=-25,-26,PART,R18
+Style=8192
+
+[Attr]
+ONV=-29,-37,RESISTANCE,7k7
+Style=8192
+
+[Wire]
+Grids=68,27,68,32
+
+[Wire]
+Grids=68,32,72,32
+
+[Wire]
+Grids=68,12,68,21
+
+[Wire]
+Grids=68,12,75,12
+
+[Comp]
+Name=Capacitor
+Grid=84,28
+Rot=2
+
+[Attr]
+ONV=-26,-24,PART,C5
+Style=8192
+
+[Attr]
+ONV=-36,-36,CAPACITANCE,1000u
+Style=8192
+
+[Wire]
+Grids=75,28,78,28
+
+[Wire]
+Grids=75,28,75,29
+
+[Wire]
+Grids=84,28,88,28
+
+[Comp]
+Name=Capacitor
+Grid=68,32
+Rot=2
+
+[Attr]
+ONV=-26,-24,PART,C6
+Style=8192
+
+[Attr]
+ONV=-36,-36,CAPACITANCE,1000u
+Style=8192
+
+[Wire]
+Grids=59,32,62,32
+
+[Comp]
+Name=Resistor
+Grid=68,42
+Rot=3
+
+[Attr]
+ONV=-25,-26,PART,R19
+Style=8192
+
+[Attr]
+ONV=-29,-37,RESISTANCE,820
+Style=8192
+
+[Comp]
+Name=Ground
+Grid=68,42
+Rot=7
+
+[Wire]
+Grids=68,32,68,36
+
+[Comp]
+Name=Resistor
+Grid=75,35
+Rot=1
+
+[Attr]
+ONV=-30,27,PART,R20
+Style=8192
+
+[Attr]
+ONV=-32,17,RESISTANCE,54
+Style=8192
+
+[Comp]
+Name=Capacitor
+Grid=129,28
+Rot=2
+
+[Attr]
+ONV=-26,-24,PART,C7
+Style=8192
+
+[Attr]
+ONV=-36,-36,CAPACITANCE,100u
+Style=8192
+
+[Wire]
+Grids=120,28,123,28
+
+[Wire]
+Grids=120,28,120,29
+
+[Wire]
+Grids=129,28,133,28
+
 [Schematic]
 CurrentSection 0=0
 CurrentSection 1=0
@@ -800,7 +1009,7 @@ Scale 1=1
 Scale 2=1
 SB 3=20,0
 Scale 3=1
-Grid=54,58
+Grid=129,45
 
 [Page]
 Index=1
@@ -817,7 +1026,7 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
-SB 0=29,2
+SB 0=28,2
 
 [Page]
 Index=3
@@ -842,10 +1051,10 @@ Page=2
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 Background Color=#FFFFFF
-Len=99
+Len=98
 *** From file C:\MC9\library\UTILITY.LBR
 *** 60HZ Sinusoidal Source
-.MODEL 60HZ SIN (A=0.01 F=60)
+.MODEL 60HZ SIN (A=0.1 F=60)
 
 [Transient]
 Window Placement=2,3, -1,-1, -8,-31, 26,26,1201,444
@@ -1019,7 +1228,7 @@ Analysis=Transient
 Plt=1
 AliasID=1
 XExp=T
-YExp=v(14)
+YExp=v(1)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
@@ -1040,7 +1249,7 @@ Analysis=Transient
 Plt=1
 AliasID=4
 XExp=T
-YExp=v(13)
+YExp=v(7)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
