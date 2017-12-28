@@ -5,7 +5,7 @@ Program=Micro-Cap
 Screen=1366,768
 MCAPVersion=9.0.6.1
 Key ID=2 233 293 684
-NLCnt=56
+NLCnt=36
 TXCnt=0
 
 [shapedef]
@@ -297,18 +297,6 @@ Style=8192
 ONV=17,24,RESISTANCE,20k
 Style=8192
 
-[Comp]
-Name=Sine Source
-Grid=45,59
-Rot=3
-
-[Attr]
-ONV=-29,-24,PART,V4
-Style=8192
-
-[Attr]
-ONV=-42,-36,MODEL,60HZ
-
 [Wire]
 Grids=45,51,45,53
 
@@ -318,22 +306,11 @@ Grids=86,48,96,48
 [Wire]
 Grids=96,48,96,69
 
-[Comp]
-Name=Ground
-Grid=72,46
-Rot=7
-
 [Wire]
 Grids=45,51,56,51
 
 [Wire]
 Grids=62,51,70,51
-
-[Wire]
-Grids=72,45,77,45
-
-[Wire]
-Grids=72,45,72,46
 
 [Wire]
 Grids=80,69,96,69
@@ -348,152 +325,83 @@ Grids=70,51,70,69
 Grids=70,51,77,51
 
 [Comp]
-Name=Ground
-Grid=105,56
-Rot=7
-
-[Comp]
 Name=Resistor
-Grid=116,48
+Grid=62,36
+Rot=2
 
 [Attr]
-ONV=19,15,PART,R3
+ONV=-32,-18,PART,R3
 Style=8192
 
 [Attr]
-ONV=17,30,RESISTANCE,30k
+ONV=-36,-30,RESISTANCE,10k
 Style=8192
 
-[Comp]
-Name=OP07_LT
-Grid=137,42
-
-[Attr]
-ONV=42,32,PART,X1
-Style=8192
-
-[Attr]
-ONV=51,46,NAME,OP07_LT
-
-[Attr]
-ONV=51,70,PACKAGE,TO-5C_8
-
-[Comp]
-Name=Battery
-Grid=143,40
-Rot=3
-
-[Attr]
-ONV=7,-43,PART,V5
-Style=8192
-
-[Attr]
-ONV=-22,-37,VALUE,15
+[Wire]
+Grids=62,36,70,36
 
 [Comp]
 Name=Ground
-Grid=143,40
+Grid=45,44
 Rot=7
-
-[Wire]
-Grids=141,34,143,34
-
-[Wire]
-Grids=141,34,141,41
-
-[Comp]
-Name=Battery
-Grid=142,59
-Rot=3
-
-[Attr]
-ONV=7,-42,PART,V6
-Style=8192
-
-[Attr]
-ONV=-22,-37,VALUE,15
-
-[Wire]
-Grids=141,59,142,59
-
-[Wire]
-Grids=141,49,141,59
-
-[Wire]
-Grids=142,58,142,59
-
-[Comp]
-Name=Ground
-Grid=144,51
-Rot=7
-
-[Wire]
-Grids=142,51,142,53
-
-[Wire]
-Grids=142,51,144,51
-
-[Comp]
-Name=Resistor
-Grid=134,66
-
-[Attr]
-ONV=18,10,PART,R4
-Style=8192
-
-[Attr]
-ONV=17,24,RESISTANCE,15k
-Style=8192
 
 [Comp]
 Name=Sine Source
-Grid=105,56
+Color=#000080
+Grid=45,44
 Rot=3
 
 [Attr]
-ONV=-29,-24,PART,V7
+ONV=-29,-24,PART,V5
 Style=8192
 
 [Attr]
 ONV=-42,-36,MODEL,60HZ
 
 [Wire]
-Grids=105,48,105,50
+Grids=45,36,45,38
 
 [Wire]
-Grids=146,45,156,45
+Grids=45,36,56,36
 
 [Wire]
-Grids=156,45,156,66
+Grids=77,36,77,45
+
+[Comp]
+Name=Resistor
+Grid=70,39
+Rot=1
+
+[Attr]
+ONV=-24,21,PART,R4
+Style=8192
+
+[Attr]
+ONV=-24,7,RESISTANCE,20k
+Style=8192
 
 [Comp]
 Name=Ground
-Grid=132,43
+Grid=70,45
 Rot=7
 
 [Wire]
-Grids=105,48,116,48
+Grids=70,36,70,39
 
 [Wire]
-Grids=122,48,130,48
+Grids=70,36,77,36
 
-[Wire]
-Grids=132,42,137,42
+[Comp]
+Name=Sine Source
+Grid=45,59
+Rot=3
 
-[Wire]
-Grids=132,42,132,43
+[Attr]
+ONV=-29,-24,PART,V6
+Style=8192
 
-[Wire]
-Grids=140,66,156,66
-
-[Wire]
-Grids=130,66,134,66
-
-[Wire]
-Grids=130,48,130,66
-
-[Wire]
-Grids=130,48,137,48
+[Attr]
+ONV=-42,-36,MODEL,60HZ
 
 [Schematic]
 CurrentSection 0=0
@@ -603,9 +511,9 @@ Name=Main
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=214,152
+SB 3=216,196
 Scale 3=1
-Grid=120,36
+Grid=120,73
 
 [Page]
 Index=1
@@ -622,7 +530,7 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
-SB 0=27,2
+SB 0=26,2
 
 [Page]
 Index=3
@@ -647,10 +555,10 @@ Page=2
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 Background Color=#FFFFFF
-Len=97
+Len=96
 *** From file C:\MC9\library\UTILITY.LBR
 *** 60HZ Sinusoidal Source
-.MODEL 60HZ SIN (A=12 F=60)
+.MODEL 60HZ SIN (A=3 F=60)
 
 [Transient]
 Window Placement=2,3, -1,-1, -8,-31, 26,26,1201,444
@@ -972,7 +880,7 @@ Analysis=Transient
 Plt=1
 AliasID=1
 XExp=T
-YExp=v(7)
+YExp=v(1)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
@@ -993,7 +901,7 @@ Analysis=Transient
 Plt=1
 AliasID=2
 XExp=T
-YExp=v(10)
+YExp=v(6)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
