@@ -8,7 +8,6 @@
 .def temp = r16
 .def delay0 = r17
 .def delay1 = r18
-.def delay2 = r19
 
 .cseg
 .org 0x00 ;начало
@@ -25,9 +24,7 @@ MAIN:
 	rjmp MAIN
 DELAY:
 	dec delay0
-	;brne DELAY
-	dec delay1
 	brne DELAY
-	dec delay2
+	dec delay1
 	brne DELAY
 	ret
