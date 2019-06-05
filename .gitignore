@@ -4,3 +4,10 @@
 *.ANO
 *.DBK
 *.PWI
+*.atsuo
+*.atsln
+*.tmp
+*.asmproj
+*.lss
+*.map
+*.obj
