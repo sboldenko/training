@@ -17,23 +17,17 @@
 INIT:
 	ldi temp, 0x01
 	out DDRB, temp
-;MAIN:
-;	sbi PORTB, 0x00
-;	rcall DELAY
-;	cbi PORTB, 0x00
-;	rcall DELAY
-;	rjmp MAIN
-;DELAY:
-	;dec delay0
-	;breq 0
-	;dec delay1
+MAIN:
+	sbi PORTB, 0x00
+	rcall DELAY
+	cbi PORTB, 0x00
+	rcall DELAY
+	rjmp MAIN
+DELAY:
+	dec delay0
 	;brne DELAY
-	;dec delay2
-	;brne DELAY
-	;ret
-
-main:
-sbi PORTB, 0x00
-
-cbi PORTB, 0x00
-rjmp main
+	dec delay1
+	brne DELAY
+	dec delay2
+	brne DELAY
+	ret
