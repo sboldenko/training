@@ -15,7 +15,9 @@ INIT:
 	ldi temp, 0x08
 	out PORTB, temp
 MAIN:
+	sbic PINB, 3
 	rjmp MAIN
-
+	sbi PORTB, 0
+	rjmp MAIN
 
 
