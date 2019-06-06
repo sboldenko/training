@@ -12,6 +12,8 @@
 INIT:
 	ldi temp, 0x01
 	out DDRB, temp
+	ldi temp, 0x08
+	out PORTB, temp
 MAIN:
 	rjmp MAIN
 
