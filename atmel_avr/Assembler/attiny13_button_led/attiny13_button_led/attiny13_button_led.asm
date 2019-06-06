@@ -15,9 +15,15 @@ INIT:
 	ldi temp, 0x08
 	out PORTB, temp
 MAIN:
-	sbic PINB, 3
+	rcall LED_OFF
+	rcall LED_ON
 	rjmp MAIN
+LED_ON:
+	sbis PINB, 3
 	sbi PORTB, 0
-	rjmp MAIN
-
+	ret
+LED_OFF:
+	sbic PINB, 3
+	cbi PORTB, 0
+	ret
 
