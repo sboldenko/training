@@ -11,3 +11,5 @@
 *.lss
 *.map
 *.obj
+.idea
+*.iml
