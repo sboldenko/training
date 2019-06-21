@@ -11,3 +11,4 @@
     - ATtiny2313
   - язык Assembler
     - ATtiny13A  
+- программированию на языке JAVA		
