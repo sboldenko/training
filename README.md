@@ -1,6 +1,6 @@
 # -TRAINING-  
 
-![I never asked for this](https://github.com/sboldenko/training/tree/master/img/adventure-time.png)
+![I never asked for this](img/adventure-time.png)
 
 Репозиторий для хранения изучаемых проектов по:  
 
